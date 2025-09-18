@@ -1,12 +1,23 @@
-# MultimodalAD: Multi-stage Alignment and Fusion for Multi-modal Multi-class Alzheimer’s Disease Diagnosis
-This is the code for the paper "Multi-stage Alignment and Fusion for Multi-modal Multi-class Alzheimer’s Disease Diagnosis" in conference the 28th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2025).
+# MultimodalAD: Multistage Alignment and Fusion for Multimodal Multiclass Alzheimer’s Disease Diagnosis
+This is the code for the paper "Multistage Alignment and Fusion for Multimodal Multiclass Alzheimer’s Disease Diagnosis" in conference the 28th International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2025).
 
 To address the challenges in the alignment and fusion of data from heterogeneous and complex modalities, we propose here a novel framework for multimodal and multiclass AD diagnosis. Our framework integrates scalar images (T1-weighted MRI (T1w MRI), tau PET), high-dimensional fiber orientation distribution (FOD) from diffusion MRI, and tabular data (age, sex, Montreal Cognitive Assessment (MoCA) scores). First, we developed a SWIN-FOD model to process the complex 4D FODs efficiently. For fusing MRI and PET, we adapted the ALBEF model to handle 3D volumes. To capture relationships between features, we employed the pretrained priors in TabPFN, avoiding the need for additional feature alignment. Tested on the ADNI dataset (n = 1147), our model achieved 73.21\% accuracy, surpassing all comparison methods. Additionally, we analyzed the impact of each modality on the final diagnosis by Shapley analysis.
 
-Figure 1 shows the workflow of mor method.
+Figure 1 shows the workflow of our method.
 
+<p align="center">
+  <img width="2895" height="1374" alt="Workflowgithub" src="https://github.com/user-attachments/assets/6df1909e-8952-466b-a1e1-5d5e38a5f594" />
+  <br/>
+  <em>Figure 1. Workflow of our proposed method.</em>
+</p>
 
-<img width="2895" height="1374" alt="Workflowgithub" src="https://github.com/user-attachments/assets/6df1909e-8952-466b-a1e1-5d5e38a5f594" />
+In this work, we modified the Swin-UNETR for FOD feature extraction and the ALBEF model for image fusion. The workflows are shown in Figure 2:
+
+<p align="center">
+  <img width="6339" height="2786" alt="Chartgithub" src="https://github.com/user-attachments/assets/41c564ba-ad25-4c29-89ed-4b8c1931db57" />
+  <br/>
+  <em>Figure 2. Detailed workflows of Swin-UNETR and ALBEF modifications.</em>
+</p>
 
 We appreciate the code provided by 
 [Swin-UNETR](https://github.com/Project-MONAI/research-contributions/tree/main/SwinUNETR), 
