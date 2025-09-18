@@ -1,0 +1,19 @@
+train_file: '/ifs/loni/faculty/shi/spectrum/Student_2020/huangshuo/multimodel/SwinUNETR/surfaceconvolution/ADNI_data_list.csv'
+test_file: '/ifs/loni/faculty/shi/spectrum/Student_2020/huangshuo/multimodel/SwinUNETR/surfaceconvolution/ADNI_mergedMOCA_closest_within_6mo.csv'
+
+patch_size: 32
+image_res: [128, 128, 128]
+in_chans: 1
+vision_width: 768
+embed_dim: 256
+depth: 6
+num_heads: 12
+batch_size: 4
+temp: 0.07
+mlm_probability: 0.25
+queue_size: 1024
+momentum: 0.995
+alpha: 0.4
+
+optimizer: {opt: adamW, lr: 1e-4, weight_decay: 0.02}
+schedular: {sched: cosine, lr: 1e-4, epochs: 300, min_lr: 1e-5, decay_rate: 1, warmup_lr: 1e-5, warmup_epochs: 20, cooldown_epochs: 0}
