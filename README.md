@@ -26,7 +26,7 @@ We build upon prior work including
 and [Shapley additive analysis](https://arxiv.org/abs/1705.07874). We appreciate the code provided by 
 [Swin-UNETR(github)](https://github.com/Project-MONAI/research-contributions/tree/main/SwinUNETR), 
 [ALBEF(github)](https://github.com/salesforce/ALBEF), 
-and [TabPFN(github)](https://github.com/automl/TabPFN), as well as the Shapley analysis code provided by [SHAP(github)](https://github.com/shap/shap). Part of the comparision on different image analysis methods uses the code in [Timm-3D(github)](https://github.com/ZFTurbo/timm_3d).
+and [TabPFN(github)](https://github.com/automl/TabPFN), as well as the Shapley additive analysis code provided by [SHAP(github)](https://github.com/shap/shap). Part of the comparision on different image analysis methods uses the code in [Timm-3D(github)](https://github.com/ZFTurbo/timm_3d).
 
 If you find our work useful, please cite it as:
 
