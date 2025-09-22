@@ -33,7 +33,7 @@ If you find our work useful, please cite it as:
 ```bibtex
 @InProceedings{HuangShuo_Multistage_MICCAI2025,
   author    = {Huang, Shuo and Zhong, Lujia and Shi, Yonggang},
-  title     = {{Multistage Alignment and Fusion for Multimodal Multiclass Alzheimer’s Disease Diagnosis}},
+  title     = {Multistage Alignment and Fusion for Multimodal Multiclass Alzheimer’s Disease Diagnosis},
   booktitle = {Proceedings of Medical Image Computing and Computer Assisted Intervention -- MICCAI 2025},
   year      = {2025},
   publisher = {Springer Nature Switzerland},
